@@ -1,0 +1,90 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Student Management System</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head><body><header class="header">
+    <h1>Student Management System</h1>
+    <p>Manage student records in one place</p>
+</header>
+
+<main class="container">
+
+    <!-- Dashboard Statistics -->
+    <section class="dashboard">
+
+        <div class="card">
+            <h3>Total Students</h3>
+            <p id="totalStudents">0</p>
+        </div>
+
+        <div class="card">
+            <h3>Department</h3>
+            <p>CSE</p>
+        </div>
+
+    </section>
+
+    <!-- Add Student Form -->
+    <section class="form-section">
+
+        <h2>Add New Student</h2>
+
+        <form id="studentForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Student Name"
+                required
+            >
+
+            <input
+                type="text"
+                id="rollNumber"
+                placeholder="Roll Number"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Email Address"
+                required
+            >
+
+            <input
+                type="text"
+                id="department"
+                placeholder="Department"
+                required
+            >
+
+            <button type="submit">Add Student</button>
+
+        </form>
+
+    </section>
+
+    <!-- Student Search -->
+    <section class="students-section">
+
+        <h2>Student Records</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search by name or roll number..."
+        >
+
+        <!-- Student records will appear here -->
+        <div id="studentList"></div>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body></html>
